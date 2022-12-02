@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="container_parrafo-info">
-                    <p>Estudiante de Ingenieria en Sistemasy programación enfocada al Desarrollo Web Full-Stack y Diseño UX/UI. Como persona amante a los diseños intuitivos y estéticamente agradables busco crear proyectos que brinden la mejor experiencia para el usuario.</p>
+                    <p>Estudiante de Ingenieria en Sistemas y programación enfocada al Desarrollo Web Full-Stack y Diseño UX/UI. Como persona amante a los diseños intuitivos y estéticamente agradables busco crear proyectos que brinden la mejor experiencia para el usuario.</p>
                 </div>
 
                 <div class="container_button">
@@ -282,7 +282,7 @@
                         <p>Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
                     </div>
     
-                    <form id="form" class="form-contact" name="contacto-portafolio" netlify>
+                    <form action="mailto.php" method="POST" id="form" class="form-contact" name="contacto-portafolio" netlify>
                         <input id="nombre" type="text" name="name" placeholder="Nombre" required>
                         <input id="email" type="email" name="email" placeholder="E-mail" required>
                         <input id="asunto" type="text" name="affair" placeholder="Asunto" required>
@@ -291,6 +291,8 @@
                         <div class="btn_form--contacto">
                             <button id="btn-enviar" type="submit">Enviar</button>
                         </div>
+                        <input type="hidden" name="_next" value="index.html">
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
             </div>
